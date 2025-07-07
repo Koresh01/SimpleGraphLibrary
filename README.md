@@ -2,7 +2,7 @@
 Библиотека для построения графиков в Unity UI Canvas.
 
 <img src="https://github.com/user-attachments/assets/f21531a4-3d0c-410f-880f-cdf0385f82a2" width="600"/>
-<img src="https://github.com/user-attachments/assets/49e6f547-4d12-4f9c-975d-72a10aced6bb" width="350"/>
+<img src="https://github.com/user-attachments/assets/49e6f547-4d12-4f9c-975d-72a10aced6bb" width="300"/>
 
 
 # Пример использования
