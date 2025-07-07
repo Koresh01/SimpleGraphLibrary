@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -73,6 +74,34 @@ public class GraphRenderer
             DrawLine(points[i - 1], points[i], color);
         }
         texture.Apply();
+    }
+
+    /// <summary>
+    /// Рисует оси X и Y по данным точек (находится 0 по X и Y).
+    /// </summary>
+    /// <param name="data">Оригинальные точки графика (ненормализованные).</param>
+    /// <param name="color">Цвет осей.</param>
+    public void DrawAxes(List<Vector2> data, Color color)
+    {
+        if (data == null || data.Count == 0) return;
+
+        float xMin = data.Min(p => p.x);
+        float xMax = data.Max(p => p.x);
+        float yMin = data.Min(p => p.y);
+        float yMax = data.Max(p => p.y);
+
+        // Где находится (0,0) на текстуре
+        float zeroX = Mathf.InverseLerp(xMin, xMax, 0f) * Width;
+        float zeroY = Mathf.InverseLerp(yMin, yMax, 0f) * Height;
+
+        // Если 0 вне диапазона, то оси не рисуем
+        bool drawX = zeroY >= 0 && zeroY <= Height;
+        bool drawY = zeroX >= 0 && zeroX <= Width;
+
+        if (drawX)
+            DrawLine(new Vector2(0, zeroY), new Vector2(Width, zeroY), color);
+        if (drawY)
+            DrawLine(new Vector2(zeroX, 0), new Vector2(zeroX, Height), color);
     }
 
     /// <summary>
