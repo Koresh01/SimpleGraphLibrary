@@ -871,7 +871,6 @@ GameObject:
   - component: {fileID: 755893388}
   - component: {fileID: 755893390}
   - component: {fileID: 755893389}
-  - component: {fileID: 755893391}
   m_Layer: 5
   m_Name: "Image (\u0432\u0430\u0448 \u0433\u0440\u0430\u0444\u0438\u043A)"
   m_TagString: Untagged
@@ -936,21 +935,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755893387}
   m_CullTransparentMesh: 1
---- !u!114 &755893391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755893387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d90d34cab9424408b3f2a3d1656d2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetImage: {fileID: 755893389}
-  width: 512
-  height: 512
 --- !u!1 &800076618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,8 +1329,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0417\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u043F\u043E \u043E\u0441\u0438
-    X"
+  m_Text: "\u0425"
 --- !u!222 &1359891075
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1432,8 +1415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 515, y: -428}
-  m_SizeDelta: {x: 596.1326, y: 100}
+  m_AnchoredPosition: {x: 922.04016, y: -39}
+  m_SizeDelta: {x: 212.6655, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1545521424
 MonoBehaviour:
@@ -1611,8 +1594,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0417\u043D\u0430\u0447\u0435\u043D\u0438\u0435 \u043F\u043E \u043E\u0441\u0438
-    Y"
+  m_Text: Y
 --- !u!222 &1553883110
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1665,7 +1647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f4094e90d27a54f9a7f0cfa26dcc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graphRenderer: {fileID: 755893391}
+  graphImage: {fileID: 755893389}
   inputX: {fileID: 2134996487}
   inputY: {fileID: 1545521424}
   buttonAdd: {fileID: 656969468}
@@ -1866,8 +1848,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 515, y: -354}
-  m_SizeDelta: {x: 596.1326, y: 100}
+  m_AnchoredPosition: {x: 773, y: -38}
+  m_SizeDelta: {x: 212.6655, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2134996487
 MonoBehaviour:
